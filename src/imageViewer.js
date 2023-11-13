@@ -469,11 +469,11 @@ const Style = `
       background: #555;
     }
   }
-  .hiddenScrollbar, .imageViewer > .container > .footer > .thumbnailsWrapper, .imageViewer > .container > .imagesWrapper > .imageContainer, .imageViewer > .container > .imagesWrapper {
+  .hiddenScrollbar, .imageViewer > .container-llbede > .footer > .thumbnailsWrapper, .imageViewer > .container-llbede > .imagesWrapper > .imageContainer, .imageViewer > .container-llbede > .imagesWrapper {
     scrollbar-width: none;
   }
   
-  .hiddenScrollbar::-webkit-scrollbar, .imageViewer > .container > .footer > .thumbnailsWrapper::-webkit-scrollbar, .imageViewer > .container > .imagesWrapper > .imageContainer::-webkit-scrollbar, .imageViewer > .container > .imagesWrapper::-webkit-scrollbar {
+  .hiddenScrollbar::-webkit-scrollbar, .imageViewer > .container-llbede > .footer > .thumbnailsWrapper::-webkit-scrollbar, .imageViewer > .container-llbede > .imagesWrapper > .imageContainer::-webkit-scrollbar, .imageViewer > .container-llbede > .imagesWrapper::-webkit-scrollbar {
     width: 0;
     height: 0;
     display: none;
@@ -506,36 +506,36 @@ const Style = `
     cursor: default;
   }
   
-  .darkTransparentBackground, .imageViewer > .container > .arrowButton, .imageViewer > .container > .toolbar > .defaultButton,
-  .imageViewer > .container > .toolbar > .customButton {
+  .darkTransparentBackground, .imageViewer > .container-llbede > .arrowButton, .imageViewer > .container-llbede > .toolbar > .defaultButton,
+  .imageViewer > .container-llbede > .toolbar > .customButton {
     transition: background-color 50ms;
   }
   
-  .darkTransparentBackground:enabled:active, .imageViewer > .container > .arrowButton:enabled:active, .imageViewer > .container > .toolbar > .defaultButton:enabled:active,
-  .imageViewer > .container > .toolbar > .customButton:enabled:active {
+  .darkTransparentBackground:enabled:active, .imageViewer > .container-llbede > .arrowButton:enabled:active, .imageViewer > .container-llbede > .toolbar > .defaultButton:enabled:active,
+  .imageViewer > .container-llbede > .toolbar > .customButton:enabled:active {
     background-color: rgba(0, 0, 0, 0.4) !important;
   }
   
   @media (hover: hover) and (pointer: fine) {
-    .darkTransparentBackground, .imageViewer > .container > .arrowButton, .imageViewer > .container > .toolbar > .defaultButton,
-  .imageViewer > .container > .toolbar > .customButton {
+    .darkTransparentBackground, .imageViewer > .container-llbede > .arrowButton, .imageViewer > .container-llbede > .toolbar > .defaultButton,
+  .imageViewer > .container-llbede > .toolbar > .customButton {
       transition: background-color 150ms;
     }
-    .darkTransparentBackground:enabled:hover, .imageViewer > .container > .arrowButton:enabled:hover, .imageViewer > .container > .toolbar > .defaultButton:enabled:hover,
-  .imageViewer > .container > .toolbar > .customButton:enabled:hover {
+    .darkTransparentBackground:enabled:hover, .imageViewer > .container-llbede > .arrowButton:enabled:hover, .imageViewer > .container-llbede > .toolbar > .defaultButton:enabled:hover,
+  .imageViewer > .container-llbede > .toolbar > .customButton:enabled:hover {
       background-color: rgba(0, 0, 0, 0.2) !important;
     }
-    .darkTransparentBackground:enabled:focus, .imageViewer > .container > .arrowButton:enabled:focus, .imageViewer > .container > .toolbar > .defaultButton:enabled:focus,
-  .imageViewer > .container > .toolbar > .customButton:enabled:focus {
+    .darkTransparentBackground:enabled:focus, .imageViewer > .container-llbede > .arrowButton:enabled:focus, .imageViewer > .container-llbede > .toolbar > .defaultButton:enabled:focus,
+  .imageViewer > .container-llbede > .toolbar > .customButton:enabled:focus {
       background-color: rgba(0, 0, 0, 0.3) !important;
     }
-    .darkTransparentBackground:enabled:active, .imageViewer > .container > .arrowButton:enabled:active, .imageViewer > .container > .toolbar > .defaultButton:enabled:active,
-  .imageViewer > .container > .toolbar > .customButton:enabled:active {
+    .darkTransparentBackground:enabled:active, .imageViewer > .container-llbede > .arrowButton:enabled:active, .imageViewer > .container-llbede > .toolbar > .defaultButton:enabled:active,
+  .imageViewer > .container-llbede > .toolbar > .customButton:enabled:active {
       background-color: rgba(0, 0, 0, 0.4) !important;
     }
   }
-  .darkTransparentBackground:disabled, .imageViewer > .container > .arrowButton:disabled, .imageViewer > .container > .toolbar > .defaultButton:disabled,
-  .imageViewer > .container > .toolbar > .customButton:disabled {
+  .darkTransparentBackground:disabled, .imageViewer > .container-llbede > .arrowButton:disabled, .imageViewer > .container-llbede > .toolbar > .defaultButton:disabled,
+  .imageViewer > .container-llbede > .toolbar > .customButton:disabled {
     opacity: 0.5;
     cursor: default;
   }
@@ -634,14 +634,14 @@ const Style = `
     opacity: 0;
     transition: opacity 160ms ease-in-out;
   }
-  .imageViewer > .container {
+  .imageViewer > .container-llbede {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .imageViewer > .container > .imagesWrapper {
+  .imageViewer > .container-llbede > .imagesWrapper {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -651,7 +651,7 @@ const Style = `
     gap: 100px;
     overflow: hidden;
   }
-  .imageViewer > .container > .imagesWrapper > .imageContainer {
+  .imageViewer > .container-llbede > .imagesWrapper > .imageContainer {
     min-width: 100%;
     min-height: 100%;
     display: flex;
@@ -662,35 +662,35 @@ const Style = `
     position: relative;
     cursor: default;
   }
-  .imageViewer > .container > .imagesWrapper > .imageContainer > .image {
+  .imageViewer > .container-llbede > .imagesWrapper > .imageContainer > .image {
     width: auto;
     max-width: 100%;
     height: auto;
     max-height: 100%;
     cursor: pointer;
   }
-  .imageViewer > .container > .imagesWrapper .stretch > .image {
+  .imageViewer > .container-llbede > .imagesWrapper .stretch > .image {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .imageViewer > .container > .imagesWrapper .zoom {
+  .imageViewer > .container-llbede > .imagesWrapper .zoom {
     display: inline;
   }
-  .imageViewer > .container > .imagesWrapper .zoom > .image {
+  .imageViewer > .container-llbede > .imagesWrapper .zoom > .image {
     max-width: unset;
     max-height: unset;
     margin-bottom: -20px;
   }
-  .imageViewer > .container > .touchSurface {
+  .imageViewer > .container-llbede > .touchSurface {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .imageViewer > .container > .toolbar {
+  .imageViewer > .container-llbede > .toolbar {
     width: 55px;
     height: auto;
     position: absolute;
@@ -699,20 +699,20 @@ const Style = `
     display: flex;
     flex-direction: column;
   }
-  .imageViewer > .container > .toolbar > * {
+  .imageViewer > .container-llbede > .toolbar > * {
     transition: opacity 200ms ease-in-out;
   }
-  .imageViewer > .container > .toolbar > .defaultButton,
-  .imageViewer > .container > .toolbar > .customButton {
+  .imageViewer > .container-llbede > .toolbar > .defaultButton,
+  .imageViewer > .container-llbede > .toolbar > .customButton {
     width: 100%;
     height: 55px;
     display: flex;
   }
-  .imageViewer > .container > .toolbar > .defaultButton {
+  .imageViewer > .container-llbede > .toolbar > .defaultButton {
     justify-content: center;
     align-items: center;
   }
-  .imageViewer > .container > .toolbar > .defaultButton > div {
+  .imageViewer > .container-llbede > .toolbar > .defaultButton > div {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -723,15 +723,15 @@ const Style = `
     justify-content: center;
     align-items: center;
   }
-  .imageViewer > .container > .toolbar > .zoomOutButton {
+  .imageViewer > .container-llbede > .toolbar > .zoomOutButton {
     display: none;
   }
-  .imageViewer > .container > .toolbar > .customButton {
+  .imageViewer > .container-llbede > .toolbar > .customButton {
     background-size: 19px auto;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .imageViewer > .container > .arrowButton {
+  .imageViewer > .container-llbede > .arrowButton {
     width: 80px;
     height: calc(100% - 300px);
     min-height: 100px;
@@ -745,7 +745,7 @@ const Style = `
     transform: translate(0, -50%);
     transition: opacity 200ms ease-in-out;
   }
-  .imageViewer > .container > .arrowButton > div {
+  .imageViewer > .container-llbede > .arrowButton > div {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -756,17 +756,17 @@ const Style = `
     justify-content: center;
     align-items: center;
   }
-  .imageViewer > .container > .leftButton {
+  .imageViewer > .container-llbede > .leftButton {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     left: 0;
   }
-  .imageViewer > .container > .rightButton {
+  .imageViewer > .container-llbede > .rightButton {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     right: 0;
   }
-  .imageViewer > .container > .footer {
+  .imageViewer > .container-llbede > .footer {
     width: auto;
     max-width: 85%;
     height: auto;
@@ -780,20 +780,20 @@ const Style = `
     gap: 8px;
     transition: opacity 200ms ease-in-out;
   }
-  .imageViewer > .container > .footer > .description {
+  .imageViewer > .container-llbede > .footer > .description {
     padding: 2px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 1.2rem;
     color: #fafafa;
     border-radius: 2px;
   }
-  .imageViewer > .container > .footer > .description:empty {
+  .imageViewer > .container-llbede > .footer > .description:empty {
     display: none;
   }
-  .imageViewer > .container > .footer > .thumbnailsWrapper:empty {
+  .imageViewer > .container-llbede > .footer > .thumbnailsWrapper:empty {
     display: none;
   }
-  .imageViewer > .container > .footer > .thumbnailsWrapper {
+  .imageViewer > .container-llbede > .footer > .thumbnailsWrapper {
     max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
@@ -802,7 +802,7 @@ const Style = `
     display: flex;
     gap: 12px;
   }
-  .imageViewer > .container > .footer > .thumbnailsWrapper > .thumbnailContainer > .thumbnail {
+  .imageViewer > .container-llbede > .footer > .thumbnailsWrapper > .thumbnailContainer > .thumbnail {
     width: auto;
     max-width: 120px;
     height: auto;
@@ -811,28 +811,28 @@ const Style = `
     border-radius: 3px;
     cursor: pointer;
   }
-  .imageViewer > .container > .footer > .thumbnailsWrapper > .thumbnailContainer > .selected {
+  .imageViewer > .container-llbede > .footer > .thumbnailsWrapper > .thumbnailContainer > .selected {
     border-color: white;
   }
   
-  .imageViewer.hudOpacity > .container > .toolbar > *,
-  .imageViewer.hudOpacity > .container > .arrowButton,
-  .imageViewer.hudOpacity > .container > .footer {
+  .imageViewer.hudOpacity > .container-llbede > .toolbar > *,
+  .imageViewer.hudOpacity > .container-llbede > .arrowButton,
+  .imageViewer.hudOpacity > .container-llbede > .footer {
     opacity: 0;
   }
   
-  .imageViewer.hudDisplay > .container > .toolbar > *,
-  .imageViewer.hudDisplay > .container > .arrowButton,
-  .imageViewer.hudDisplay > .container > .footer {
+  .imageViewer.hudDisplay > .container-llbede > .toolbar > *,
+  .imageViewer.hudDisplay > .container-llbede > .arrowButton,
+  .imageViewer.hudDisplay > .container-llbede > .footer {
     display: none;
   }
   
-  .imageViewer.halfHud > .container > .toolbar > .closeButton,
-  .imageViewer.halfHud > .container > .toolbar > .zoomOutButton {
+  .imageViewer.halfHud > .container-llbede > .toolbar > .closeButton,
+  .imageViewer.halfHud > .container-llbede > .toolbar > .zoomOutButton {
     opacity: 1;
     display: flex;
   }
-  .imageViewer.halfHud > .container > .toolbar > .zoomInButton {
+  .imageViewer.halfHud > .container-llbede > .toolbar > .zoomInButton {
     opacity: 0;
     display: none;
   }
@@ -841,40 +841,40 @@ const Style = `
     visibility: visible;
   }
   .imageViewer.visible > .shadow,
-  .imageViewer.visible > .container {
+  .imageViewer.visible > .container-llbede {
     opacity: 1;
   }
   
   @media (max-width: 450px) {
-    .imageViewer > .container > .toolbar {
+    .imageViewer > .container-llbede > .toolbar {
       width: auto;
       height: 50px;
       flex-direction: row-reverse;
     }
-    .imageViewer > .container > .toolbar > .defaultButton,
-  .imageViewer > .container > .toolbar > .customButton {
+    .imageViewer > .container-llbede > .toolbar > .defaultButton,
+  .imageViewer > .container-llbede > .toolbar > .customButton {
       width: 50px;
       height: 100%;
     }
-    .imageViewer > .container > .arrowButton {
+    .imageViewer > .container-llbede > .arrowButton {
       width: 65px;
     }
-    .imageViewer > .container > .footer > .description {
+    .imageViewer > .container-llbede > .footer > .description {
       font-size: 1rem;
     }
   }
   @media (orientation: landscape) and (max-height: 450px) {
-    .imageViewer > .container > .toolbar {
+    .imageViewer > .container-llbede > .toolbar {
       width: auto;
       height: 50px;
       flex-direction: row-reverse;
     }
-    .imageViewer > .container > .toolbar > .defaultButton,
-  .imageViewer > .container > .toolbar > .customButton {
+    .imageViewer > .container-llbede > .toolbar > .defaultButton,
+  .imageViewer > .container-llbede > .toolbar > .customButton {
       width: 50px;
       height: 100%;
     }
-    .imageViewer > .container > .footer {
+    .imageViewer > .container-llbede > .footer {
       bottom: 5px;
     }
   }
