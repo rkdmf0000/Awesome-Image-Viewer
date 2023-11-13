@@ -72,7 +72,7 @@ class ImageViewer {
         const html = `
             <div class="imageViewer" id="${viewID}">
                 <div class="shadow"></div>
-                <div class="container">
+                <div class="container-llbede">
                     <div class="imagesWrapper"></div>
                     <button class="touchSurface"></button>
                     <div class="toolbar">
